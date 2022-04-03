@@ -1,0 +1,43 @@
+.myCart {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.shopping-cart .cart-btn {
+  background-color: var(--ecomm-primary-color);
+}
+
+.shopping-cart {
+  margin: 2rem;
+}
+
+.checkout .price-cart {
+  width: 70rem;
+  height: 30rem;
+  margin: 2rem;
+  padding: 3rem 1rem;
+}
+
+.price-cart .place-order button {
+  background-color: var(--ecomm-primary-color);
+}
+
+.dropdown-menu {
+  bottom: -16.5rem;
+}
+
+@media screen and (max-width: 800px) {
+  .checkout {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  html {
+    font-size: 40%;
+  }
+}
