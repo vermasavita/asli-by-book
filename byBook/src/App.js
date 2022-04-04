@@ -1,9 +1,5 @@
 import "./App.css";
-import { Login } from "./pages/Authentication/login/Login";
-import { Signup } from "./pages/Authentication/signup/SignUp";
-import { CartListing } from "./pages/cart/CartListing";
-import { ProductListing } from "./pages/product/productListing/productListing";
-import { Wishlist } from "./pages/wishlist/wishlist";
+import { ProductListing, Wishlist, CartListing, Login, Signup } from './pages/index';
 import { Routes, Route } from "react-router-dom";
 
 function App() {
@@ -16,7 +12,6 @@ function App() {
         <Route path="/login" element={<Login />}/>
         <Route path="/signup" element={<Signup />}/> 
       </Routes> 
-      {/* <ProductListing/> */}
     </div>
   );
 }
