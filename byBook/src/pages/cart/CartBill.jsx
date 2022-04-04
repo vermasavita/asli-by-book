@@ -1,6 +1,6 @@
 const CartBill = () => {
   return (
-    <div class="price-cart">
+    <div className="price-cart">
       <h1>Price Details</h1>
       <hr />
 
@@ -30,7 +30,7 @@ const CartBill = () => {
         You will save <span>₹ 1200</span> on this order
       </p>
 
-      <div class="place-order">
+      <div className="place-order">
         <button>Place Order</button>
       </div>
     </div>

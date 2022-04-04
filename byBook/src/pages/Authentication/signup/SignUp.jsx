@@ -1,5 +1,4 @@
 import { Navbar } from "../../../components/nav/Navbar";
-import "./signup.css";
 
 const Signup = () => {
   return (
@@ -10,25 +9,25 @@ const Signup = () => {
           <h1>Sign Up</h1>
           <div className="login-credential">
             <div className="login-email">
-              <label for="">Email address *</label>
+              <label htmlFor="">Email address *</label>
               <input type="email" name="" id="" />
             </div>
 
             <div className="login-password">
-              <label for="">Password *</label>
-              <input type="password" name="" id="" />
+              <label htmlFor="password">Password *</label>
+              <input type="password" name="" id="password" />
             </div>
 
             <div className="confirm-password">
-              <label for="">Confirm Password *</label>
-              <input type="password" name="" id="" />
+              <label htmlFor="confPwd">Confirm Password *</label>
+              <input type="password" name="" id="confPwd" />
             </div>
           </div>
 
           <div className="con">
             <div className="remember-me">
               <input type="checkbox" id="remember-box" />
-              <label id="remember-box" for="">
+              <label htmlFor="remember-box">
                 I accept all the Terms & Conditions
               </label>
             </div>
