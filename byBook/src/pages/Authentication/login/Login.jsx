@@ -10,12 +10,12 @@ const Login = () => {
           <h1>Login</h1>
           <div className = "login-credential">
             <div className = "login-email">
-              <label htmlFor="">Email address *</label>
-              <input type="email" name="" id="" />
+              <label htmlFor="email">Email address *</label>
+              <input type="email" name="" id="email" />
             </div>
 
             <div className = "login-password">
-              <label htmlFor="">Password *</label>
+              <label htmlFor="password">Password *</label>
               <input type="password" name="" id="password" />
               Wrong password. Try again.
             </div>
