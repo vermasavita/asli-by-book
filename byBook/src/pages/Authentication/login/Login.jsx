@@ -10,13 +10,13 @@ const Login = () => {
           <h1>Login</h1>
           <div className = "login-credential">
             <div className = "login-email">
-              <label for="">Email address *</label>
-              <input type="email" name="" id="" />
+              <label htmlFor="email">Email address *</label>
+              <input type="email" name="" id="email" />
             </div>
 
             <div className = "login-password">
-              <label for="">Password *</label>
-              <input type="password" name="" id="" />
+              <label htmlFor="password">Password *</label>
+              <input type="password" name="" id="password" />
               Wrong password. Try again.
             </div>
           </div>
@@ -24,7 +24,7 @@ const Login = () => {
           <div className = "con">
             <div className = "remember-me">
               <input type="checkbox" id="remember-box" />
-              <label id="remember-box" for="">
+              <label htmlFor="remember-box">
                 Remember me
               </label>
             </div>

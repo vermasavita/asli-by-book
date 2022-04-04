@@ -1,4 +1,5 @@
 import "./navbar.css";
+import { Link } from 'react-router-dom';
 const Navbar = () => {
   return (
     <header className="header">
@@ -14,41 +15,41 @@ const Navbar = () => {
       <div className="action-icon">
         <ul className="dropdown">
           <li className="btn">
-            <a className="link" href="#">
+            <Link className="link" to="/">
               Account
-            </a>
+            </Link>
             <div className="dropdown-menu">
               <ul>
                 <li>
-                  <a href="#">
+                  <Link to="">
                     <i className="bx bxs-user-circle"></i>My Profile
-                  </a>
+                  </Link>
                 </li>
                 <hr />
                 <li>
-                  <a href="#">
+                  <Link to="">
                     <i className="bx bx-shopping-bag"></i>Orders
-                  </a>
+                  </Link>
                 </li>
                 <hr />
                 <li>
-                  <a href="#">
+                  <Link to="">
                     <i className="bx bx-power-off"></i>Logout
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>
           </li>
         </ul>
-        <a href="#" className="icon">
+        <Link to='/Wishlist' className="icon">
           <i className="bx bx-heart"></i>
           <span>0</span>
-        </a>
+        </Link>
 
-        <a href="#" className="icon">
+        <Link to="/cart" className="icon">
           <i className="bx bx-cart"></i>
           <span>0</span>
-        </a>
+        </Link>
       </div>
     </header>
   );
