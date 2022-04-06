@@ -1,23 +1,23 @@
-const Cart = () => {
+const Cart = ({cartId, cartImg, cartTitle, cartPrice}) => {
   return (
     <div className = "shopping-cart">
-      <div className = "image">
+      <div className = "image" key={cartId}>
         <img
-          src="https://m.media-amazon.com/images/I/8181LdPn39L._AC_UY218_.jpg"
+          src={cartImg}
           alt="book-image"
         />
       </div>
 
       <div className = "content">
-        <h2>The Immortals of Meluha</h2>
+        <h2>{cartTitle}</h2>
         <h4>
-          ₹400 <strike>₹800</strike>
+          ₹{cartPrice}<strike>₹{cartPrice * 2}</strike>
         </h4>
         <h6>50% off</h6>
 
         <p className = "qty">
           Quantity:
-          <input type ="number" value="2" />
+          <input type ="number" value="1" />
         </p>
 
         <p className = "cart-btn">

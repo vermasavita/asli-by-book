@@ -1,3 +1,5 @@
+import { useCart } from "../../hooks/context/cart-context";
+
 const ProductCart = ({
   productId,
   productImg,
@@ -6,6 +8,7 @@ const ProductCart = ({
   productPrice,
   productRating,
 }) => {
+  const { cartDispatch } = useCart();
   return (
     <div className="cart" key={productId}>
       <div className="img-container">
@@ -28,7 +31,24 @@ const ProductCart = ({
           </div>
         </div>
       </div>
-      <button className="add-to-cart">Add to Cart</button>
+      <button
+        className="add-to-cart"
+        onClick={() =>
+          cartDispatch({
+            type: "ADD_TO_CART",
+            payload: {
+              productId,
+              productImg,
+              productTitle,
+              productAuthor,
+              productPrice,
+              productRating,
+            },
+          })
+        }
+      >
+        Add to Cart
+      </button>
     </div>
   );
 };
