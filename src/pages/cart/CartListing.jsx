@@ -3,9 +3,10 @@ import { Cart } from "../../components/shopingCart/Cart";
 import { Navbar } from "../../components/nav/Navbar";
 import { CartBill } from "./CartBill";
 import { useCart } from '../../hooks/context/cart-context'
+import { Footer } from "../../components/footer/Footer";
 const CartListing = () => {
 
-  const {cartState, cartDispatch } = useCart()
+  const {cartState } = useCart()
   const { cart } = cartState;
   return (
     <div className="container">
@@ -25,6 +26,7 @@ const CartListing = () => {
           <CartBill />
         </div>
       </div>
+      <Footer/>
     </div>
   );
 };

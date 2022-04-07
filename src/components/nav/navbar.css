@@ -1,7 +1,7 @@
 :root {
     --ecomm-primary-color: rgba(15, 141, 173, 0.9);
     --secondary-color: rgb(255, 255, 255);
-    --head-text-color: rgb(116, 115, 115);
+    --head-text-color: rgb(195, 203, 205);
     --light-grey-color: rgb(238, 235, 235);
     --yellow-color: rgba(243, 243, 13, 0.692);
     --red-color: red;
@@ -15,8 +15,15 @@
   .header {
     background-color: var(--ecomm-primary-color);
     height: 4.5rem;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   }
-  
+
+  .header .logo{
+    font-size: 2.5rem;
+    font-weight: bolder;
+    font-family: cursive;
+  }
+
   .search-container {
     border: 1px solid var(--light-grey-color);
     border-radius: 10px;
