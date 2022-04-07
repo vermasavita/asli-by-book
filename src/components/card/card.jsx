@@ -83,24 +83,6 @@ const ProductCart = ({
           Add to Cart
         </button>
       }
-      {/* <button
-        className="add-to-cart"
-        onClick={() =>
-          cartDispatch({
-            type: "ADD_TO_CART",
-            payload: {
-              productId,
-              productImg,
-              productTitle,
-              productAuthor,
-              productPrice,
-              productRating,
-            },
-          })
-        }
-      >
-        {AddToCartHandler?"Go Cart":"Add to Cart"}
-      </button> */}
     </div>
   );
 };
