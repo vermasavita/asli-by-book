@@ -1,9 +1,11 @@
 import "./navbar.css";
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 const Navbar = () => {
   return (
     <header className="header">
-      <div className="logo">ByBook</div>
+      <div className="logo">
+        <Link to="/">ByBook</Link>
+      </div>
 
       <div className="search-container">
         <form action="">
@@ -41,7 +43,7 @@ const Navbar = () => {
             </div>
           </li>
         </ul>
-        <Link to='/Wishlist' className="icon">
+        <Link to="/wishlist" className="icon">
           <i className="bx bx-heart"></i>
           <span>0</span>
         </Link>

@@ -1,6 +1,6 @@
 import "./productListing.css";
 import { ProductData } from "../../../data/productData";
-import { ProductCart } from "../../../components/card/card";
+import { ProductCart } from "../../../components/card/Card";
 import { Navbar } from "../../../components/nav/Navbar";
 import { Filter } from "../filter/Filter";
 import { SortByPrice } from "../../../utils/filter/sort-by-price";
@@ -8,6 +8,7 @@ import { useFilter } from "../../../hooks/context/filter-context";
 import { ratingFilter } from "../../../utils/filter/rating-filter";
 import { priceFilter } from "../../../utils/filter/price-filter";
 import { categoryFilter } from "../../../utils/filter/category-filter";
+import { Footer } from "../../../components/footer/Footer";
 
 const ProductListing = () => {
   const { filterState } = useFilter();
@@ -34,6 +35,7 @@ const ProductListing = () => {
           ))}
         </div>
       </div>
+      <Footer/>
     </div>
   );
 };
